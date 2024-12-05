@@ -34,3 +34,16 @@ h6 {
 .text-sh2 {
   @apply font-medium;
 }
+
+/* button 1 */
+.button1 {
+  @apply text-lg font-semibold tracking-2perc;
+}
+/* button 2 */
+.button2 {
+  @apply text-lg tracking-2perc;
+}
+/* button 3 */
+.button3 {
+  @apply text-sm font-semibold tracking-2perc;
+}
