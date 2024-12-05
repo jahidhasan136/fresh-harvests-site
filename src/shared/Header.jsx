@@ -25,7 +25,7 @@ const Header = () => {
           <Link to="#">Blog</Link>
         </div>
         {/* product mange and auth */}
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 text-white">
           <div className="flex items-center gap-2">
             <FaHeart className="text-2xl" />
             <p className="text-b3">Favorites</p>

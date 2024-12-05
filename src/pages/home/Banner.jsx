@@ -3,12 +3,13 @@ import offerImg from "../../assets/banner/image.svg";
 import appStore from "../../assets/banner/group.svg";
 import googlePlay from "../../assets/banner/googleplay.svg";
 import specialArrow from "../../assets/banner/arrow.svg";
+import person from "../../assets/banner/person.svg";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container flex items-center">
         <div>
           {/* sub heading components */}
           <LeftHeading value="Welcome to Fresh Harvest" />
@@ -72,7 +73,9 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        <div>
+          <img className="h-[758px]" src={person} alt="" />
+        </div>
       </div>
     </section>
   );
