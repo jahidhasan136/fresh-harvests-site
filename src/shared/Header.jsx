@@ -5,12 +5,16 @@ import { IoMdCart } from "react-icons/io";
 
 const Header = () => {
   return (
-    <div className="container pt-[30px]">
+    <header className="container pt-[30px]">
       <div className="flex items-center justify-between">
         {/* logo image */}
         <div>
           <Link to="/">
-            <img className="cursor-pointer" src={logo} alt="" />
+            <img
+              className="cursor-pointer"
+              src={logo}
+              alt="Fresh Harvests Logo"
+            />
           </Link>
         </div>
         {/* headers link */}
@@ -31,12 +35,12 @@ const Header = () => {
             <p className="text-b3">Cart</p>
           </div>
           {/* button*/}
-          <div className="border border-solid  rounded">
-            <p className="py-3 px-6 button3">Sign in</p>
+          <div className="border border-solid rounded">
+            <button className="py-3 px-6 button3">Sign in</button>
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
