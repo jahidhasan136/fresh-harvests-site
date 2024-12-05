@@ -4,6 +4,7 @@ import bannerBgImage from "../../assets/banner/banner-bg.svg";
 import Products from "./Products";
 import About from "./About";
 import SpecialOffer from "./SpecialOffer";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <Products />
       <About />
       <SpecialOffer />
+      <Testimonial />
     </div>
   );
 };
