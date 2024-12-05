@@ -9,7 +9,7 @@ export default {
         green: "#749B3F",
         grey100: "#4A4A52",
         grey80: "#A6A6A6",
-        grey50: "#A6A6A6",
+        grey50: "#D9D9D9",
         grey20: "#F4F6F6",
       },
       fontSize: {

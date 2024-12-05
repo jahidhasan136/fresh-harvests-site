@@ -1,6 +1,7 @@
 import Header from "../../shared/Header";
 import Banner from "./Banner";
 import bannerBgImage from "../../assets/banner/banner-bg.svg";
+import Products from "./Products";
 
 const Home = () => {
   return (
@@ -17,6 +18,8 @@ const Home = () => {
           <Banner />
         </div>
       </div>
+      {/* outhers home sections */}
+      <Products />
     </div>
   );
 };

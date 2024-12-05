@@ -20,7 +20,7 @@ const Banner = () => {
             At Fresh Harvests, we are passionate about providing you with the
             freshest and most flavorful fruits and vegetables
           </p>
-          <button className="button1 py-4 px-8 rounded-lg bg-primary text-white">
+          <button className="button1 py-4 px-8 rounded-lg bg-primary hover:bg-white border hover:border-primary hover:text-primary transition-all duration-300 ease-in-out text-white">
             Shop Now
           </button>
           <br />
