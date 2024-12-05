@@ -42,6 +42,9 @@ export default {
         lg: "1024px",
         xl: "1280px",
       },
+      boxShadow: {
+        customMd: "0px 4px 20px 0px rgba(9, 43, 94, 0.12)",
+      },
     },
   },
   plugins: [],

@@ -2,6 +2,7 @@ import Header from "../../shared/Header";
 import Banner from "./Banner";
 import bannerBgImage from "../../assets/banner/banner-bg.svg";
 import Products from "./Products";
+import About from "./About";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       </div>
       {/* outhers home sections */}
       <Products />
+      <About />
     </div>
   );
 };

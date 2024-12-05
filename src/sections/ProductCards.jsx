@@ -22,7 +22,7 @@ const ProductCards = () => {
       {/* products card */}
       <div>
         <div className="flex items-center gap-6">
-          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center border">
+          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center shadow-customMd bg-white">
             <div className="mb-3 bg-grey20 inline-block px-[29px] py-1 rounded-2xl">
               <img src={imageOne} alt="Product Image" />
             </div>
@@ -32,7 +32,7 @@ const ProductCards = () => {
               Add to cart
             </button>
           </div>
-          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center border">
+          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center shadow-customMd bg-white">
             <div className="mb-3 bg-grey20 inline-block px-[29px] py-1 rounded-2xl">
               <img src={imageOne} alt="Product Image" />
             </div>
@@ -42,7 +42,7 @@ const ProductCards = () => {
               Add to cart
             </button>
           </div>
-          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center border">
+          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center shadow-customMd bg-white">
             <div className="mb-3 bg-grey20 inline-block px-[29px] py-1 rounded-2xl">
               <img src={imageOne} alt="Product Image" />
             </div>
@@ -52,7 +52,7 @@ const ProductCards = () => {
               Add to cart
             </button>
           </div>
-          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center border">
+          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center shadow-customMd bg-white">
             <div className="mb-3 bg-grey20 inline-block px-[29px] py-1 rounded-2xl">
               <img src={imageOne} alt="Product Image" />
             </div>
@@ -62,7 +62,7 @@ const ProductCards = () => {
               Add to cart
             </button>
           </div>
-          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center border">
+          <div className="pt-[10px] pb-5 px-3 rounded-[20px] text-center shadow-customMd bg-white">
             <div className="mb-3 bg-grey20 inline-block px-[29px] py-1 rounded-2xl">
               <img src={imageOne} alt="Product Image" />
             </div>
