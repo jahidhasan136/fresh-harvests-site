@@ -26,7 +26,7 @@ const Footer = () => {
             </Link>
             <div className="space-y-3">
               <p className="text-h7">Download App:</p>
-              <div className="flex flex-row sm:flex-col space-x-2 sm:space-x-0 sm:space-y-2">
+              <div className="flex items-center gap-[19px]">
                 <Link to="#">
                   <img
                     src={appStore}

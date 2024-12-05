@@ -5,7 +5,7 @@ import { IoMdCart } from "react-icons/io";
 
 const Header = () => {
   return (
-    <header className="container pt-[30px]">
+    <header className="container py-[30px]">
       <div className="flex items-center justify-between">
         {/* logo image */}
         <div>
