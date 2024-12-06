@@ -1,9 +1,17 @@
+import { useEffect } from "react";
 import imageOne from "../assets/products/image1.svg";
 
-const ProductCards = () => {
+const ProductBody = () => {
+  useEffect(() => {
+    fetch("https://api-fresh-harvest.code-commando.com/api/v1/category")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  }, []);
   return (
     <>
-      {/* product category tabs */}
+      {/* Product category tabs */}
       <div className="flex items-center justify-center xs:gap-3 sm:gap-6 xs:mb-6 md:mb-8">
         <button className="xs:text-xs md:button2 px-6 py-3 border border-grey50 rounded-lg text-grey80 hover:bg-green hover:border-green hover:text-white transition-all duration-300 ease-in-out">
           All
@@ -95,4 +103,4 @@ const ProductCards = () => {
   );
 };
 
-export default ProductCards;
+export default ProductBody;

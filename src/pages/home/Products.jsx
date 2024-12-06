@@ -1,5 +1,5 @@
 import CenterHeading from "../../components/subHeading/CenterHeading";
-import ProductCards from "../../sections/ProductCards";
+import ProductBody from "../../sections/ProductBody";
 
 const Products = () => {
   return (
@@ -15,7 +15,7 @@ const Products = () => {
       </div>
 
       {/* product cards */}
-      <ProductCards />
+      <ProductBody />
     </div>
   );
 };
