@@ -3,6 +3,7 @@ import logo from "../assets/logo.svg";
 import { FaHeart, FaBars } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 import ActiveLink from "../components/ActiveLink";
+import LoginModal from "../components/modal/LoginModal";
 
 const Header = () => {
   return (
@@ -38,7 +39,7 @@ const Header = () => {
             </div>
             {/* button*/}
             <div className="border border-solid rounded">
-              <button className="py-3 px-6 button3">Sign in</button>
+              <LoginModal></LoginModal>{" "}
             </div>
           </div>
 
