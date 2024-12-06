@@ -47,3 +47,7 @@ h6 {
 .button3 {
   @apply text-sm font-semibold tracking-2perc;
 }
+
+.button4 {
+  @apply text-xs font-semibold tracking-2perc;
+}
