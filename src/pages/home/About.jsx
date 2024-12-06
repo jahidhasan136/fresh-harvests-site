@@ -7,8 +7,8 @@ import LeftHeading from "../../components/subHeading/LeftHeading";
 
 const About = () => {
   return (
-    <div className="container mt-[150px]">
-      <div className="grid grid-cols-2 items-center gap-[65px]">
+    <div className="container xs:mt-[64px] md:mt-[150px]">
+      <div className="grid md:grid-cols-2 items-center gap-[65px]">
         {/* left side about image or card */}
         <div className="relative">
           <img src={person} alt="About Person Image" />
@@ -23,12 +23,16 @@ const About = () => {
 
             {/* about product card */}
             <div className="shadow-customMd bg-white pt-[5px] pb-[10px] px-[6px] rounded-[20px] text-center inline-block ml-28">
-              <div className="mb-[6px] bg-grey20 inline-block px-[29px] py-1 rounded-2xl">
+              <div className="mb-[6px] bg-grey20 inline-block px-[29px] xs:py-[3px] md:py-1 rounded-2xl">
                 <img src={productImg} alt="Product Image" />
               </div>
-              <p className="mb-1 font-medium text-[9px]">Mushroom</p>
-              <p className="text-[9px] mb-[6px]">$2.3/kg</p>
-              <button className="button3 py-[6px] border border-grey50 text-black w-full rounded-lg hover:bg-primary hover:text-white transition-all duration-300 ease-in-out">
+              <p className="xs:mb-[2px] md:mb-1 font-medium xs:text-[5px] md:text-[9px]">
+                Mushroom
+              </p>
+              <p className="xs:text-[5px] md:text-[9px] xs:mb-[3px] md:mb-[6px]">
+                $2.3/kg
+              </p>
+              <button className="xs:text-[5px] md:text-sm md:button3 py-[6px] border border-grey50 text-black w-full rounded-lg hover:bg-primary hover:text-white transition-all duration-300 ease-in-out">
                 Add to cart
               </button>
             </div>
@@ -39,8 +43,10 @@ const About = () => {
         <div className="grid gap-4">
           {/* sub heading */}
           <LeftHeading value="About us" />
-          <h2 className="text-black">About Fresh Harvest</h2>
-          <p className="text-b3 text-grey100">
+          <h2 className="text-black xs:text-h4 md:text-h2">
+            About Fresh Harvest
+          </h2>
+          <p className="xs:text-xs md:text-b3 text-grey100">
             Welcome to Fresh Harvest, your premier destination for high-quality
             and fresh produce. We are passionate about providing you with the
             finest fruits, vegetables, and salad ingredients to nourish your
@@ -49,7 +55,7 @@ const About = () => {
             revolutionize your grocery shopping experience.
           </p>
           <div>
-            <button className="button1 px-8 py-4 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-all duration-300 ease-in-out">
+            <button className="xs:text-sm md:text-lg md:button1 px-8 py-4 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-all duration-300 ease-in-out">
               Read More
             </button>
           </div>

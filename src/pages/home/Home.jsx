@@ -24,8 +24,8 @@ const Home = () => {
       </div>
       {/* outhers home sections */}
       <Products />
-      {/* <About />
-      <SpecialOffer />
+      <About />
+      {/* <SpecialOffer />
       <Testimonial />
       <Blog /> */}
     </div>
