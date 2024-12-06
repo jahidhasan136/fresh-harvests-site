@@ -27,7 +27,7 @@ const SpecialOffer = () => {
         </h2>
 
         {/* Offer days counter */}
-        <div className="flex xs:justify-center lg:justify-start items-center gap-6">
+        <div className="flex xs:justify-center lg:justify-start items-center xs:gap-[17px] lg:gap-6">
           <div className="grid gap-[10px] xs:pt-5 lg:pt-7 xs:pb-[9px] lg:pb-[13px] xs:px-[19px] lg:px-6 bg-white shadow-customMd rounded-[10px]">
             <h3 className="xs:text-h5 lg:text-h3">03</h3>
             <p className="xs:text-xs lg:text-b2">Days</p>

@@ -9,15 +9,16 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <section>
+    <section className="pt-[64px]">
       <div className="container flex items-center relative">
+        {/* Mobile device person */}
         <img
           className="absolute right-0 bottom-0 md:hidden"
           src={mobilePerson}
           alt=""
         />
         <div className="z-10">
-          {/* sub heading components */}
+          {/* Sub heading components */}
           <LeftHeading value="Welcome to Fresh Harvest" />
           <h1 className="mt-5 mb-4 xl:leading-[94px] text-black xs:text-h2 xl:text-h1">
             Fresh Fruits and Vegetables
@@ -31,7 +32,7 @@ const Banner = () => {
           </button>
           <br />
 
-          {/* special offer card */}
+          {/* Special offer card */}
           <div className="flex items-start gap-[33px] xs:mt-[22px] md:mt-[7px] xs:ml-10 md:ml-32 mb-[25px]">
             <img
               className="xs:hidden xl:inline-block"
@@ -65,7 +66,7 @@ const Banner = () => {
             </div>
           </div>
 
-          {/* download apps */}
+          {/* Download apps */}
           <div className="space-y-3">
             <p className="text-b3 text-grey100">Download App:</p>
             <div className="flex items-center gap-[19px]">
