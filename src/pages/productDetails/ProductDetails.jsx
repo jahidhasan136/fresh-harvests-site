@@ -1,16 +1,21 @@
-import image from "../../assets/product-details/image.svg";
 import LeftHeading from "../../components/subHeading/LeftHeading";
 import { FaHeart } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 import Review from "../../sections/Review";
 import RelatedProducts from "../../sections/RelatedProducts";
+import { useLoaderData } from "react-router-dom";
 
 const ProductDetails = () => {
+  const productDtails = useLoaderData();
+  console.log(productDtails.data);
+  const { description, images, price, productName } = productDtails.data;
+  const image = images?.[0];
+
   return (
     <div className="container mt-8">
       <div className="grid lg:grid-cols-2 items-center gap-[46px]">
         {/* Left side selecting image */}
-        <div>
+        <div className="border h-full place-content-center rounded-xl">
           <img className="mx-auto" src={image} alt="Details Image" />
         </div>
 
@@ -20,19 +25,15 @@ const ProductDetails = () => {
           <div className="grid xl:gap-4 xs:mb-8 xl:mb-[87px]">
             <LeftHeading className="xs:mb-1 xl:mb-0" value="Fruits" />
             <h2 className="text-black xs:text-h4 xl:text-h2 xs:mb-2 xl:mb-0">
-              Coconut
+              {productName}
             </h2>
             <h6 className="text-black xs:mb-2 xl:mb-0">
               5.0 <span className="text-h7">(1review)</span>
             </h6>
-            <h4 className="text-primary xs:mb-2 xl:mb-0">$6.3/kg</h4>
-            <p className="text-grey100 xs:text-sm xl:text-b2">
-              From our farm directly to your door, our fresh coconuts are
-              harvested at the peak of ripeness, offering you a sweet, hydrating
-              treat full of flavor. Packed with natural nutrients, coconut is
-              perfect for a variety of culinary uses, from smoothies to savory
-              dishes, or even for a refreshing drink straight from the shell.
-            </p>
+            <h4 className="text-primary xs:mb-2 xl:mb-0">
+              $<span>{price}</span>/kg
+            </h4>
+            <p className="text-grey100 xs:text-sm xl:text-b2">{description}</p>
           </div>
 
           {/* quantity */}
@@ -72,7 +73,7 @@ const ProductDetails = () => {
       </div>
 
       {/* description or review sect ion */}
-      <Review />
+      <Review description={description} />
 
       {/* Related products section */}
       <RelatedProducts />

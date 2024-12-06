@@ -1,4 +1,4 @@
-const Review = () => {
+const Review = ({ description }) => {
   return (
     <div className="mt-16">
       {/* buttons */}
@@ -13,15 +13,7 @@ const Review = () => {
 
       {/* details */}
       <p className="bg-grey20 text-grey100 py-10 px-8 rounded-3xl mt-6 xs:text-b3 xl:text-b2">
-        Our coconuts are sustainably grown, ensuring the best quality and taste.
-        Each coconut is handpicked and carefully prepared, offering you the
-        freshest product possible. Rich in healthy fats, electrolytes, and
-        essential nutrients, coconuts provide both hydration and nourishment.
-        Whether you’re using the water, flesh, or milk, our coconuts bring
-        versatility to your kitchen while supporting healthy living. Perfect for
-        smoothies, desserts, curries, and more — let the natural sweetness of
-        the coconut elevate your recipes. Enjoy the tropical goodness in its
-        purest form, directly from nature.
+        {description}
       </p>
     </div>
   );

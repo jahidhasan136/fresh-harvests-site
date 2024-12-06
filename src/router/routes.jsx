@@ -12,9 +12,17 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      // {
+      //   path: "products",
+      //   element: <ProductDetails />,
+      // },
       {
-        path: "/product-details",
+        path: "products/:id",
         element: <ProductDetails />,
+        loader: ({ params }) =>
+          fetch(
+            `https://api-fresh-harvest.code-commando.com/api/v1/products/${params.id}`
+          ),
       },
     ],
   },
