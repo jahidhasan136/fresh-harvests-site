@@ -47,7 +47,25 @@ h6 {
 .button3 {
   @apply text-sm font-semibold tracking-2perc;
 }
-
+/* button 4 */
 .button4 {
   @apply text-xs font-semibold tracking-2perc;
+}
+
+/* swiper js codes */
+.swiper-pagination-bullet {
+  background-color: #749b3f !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+.swiper-pagination {
+  position: static !important;
+  margin-top: 63px !important;
+}
+
+/* for mobile devices */
+@media screen and (max-width: 425px) {
+  .swiper-pagination {
+    margin-top: 24px !important;
+  }
 }

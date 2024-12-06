@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { FaHeart, FaBars } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
+import ActiveLink from "../components/ActiveLink";
 
 const Header = () => {
   return (
@@ -19,11 +20,11 @@ const Header = () => {
             </Link>
           </div>
           {/* headers link */}
-          <div className="lg:flex items-center lg:gap-10 xl:gap-16 text-b3 xs:hidden">
-            <Link to="/">Home</Link>
-            <Link to="#">Shop</Link>
-            <Link to="#">About us</Link>
-            <Link to="#">Blog</Link>
+          <div className="lg:flex items-center lg:gap-10 xl:gap-16 text-b3 xs:hidden text-grey100">
+            <ActiveLink to="/">Home</ActiveLink>
+            <ActiveLink to="/shop">Shop</ActiveLink>
+            <ActiveLink to="/about">About us</ActiveLink>
+            <ActiveLink to="/blog">Blog</ActiveLink>
           </div>
           {/* product mange and auth */}
           <div className="xs:hidden md:flex items-center gap-5 text-white">
