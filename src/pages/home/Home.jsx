@@ -19,15 +19,15 @@ const Home = () => {
         />
         <div>
           <Header />
-          <Banner />
+          {/* <Banner /> */}
         </div>
       </div>
       {/* outhers home sections */}
-      <Products />
+      {/* <Products />
       <About />
       <SpecialOffer />
       <Testimonial />
-      <Blog />
+      <Blog /> */}
     </div>
   );
 };

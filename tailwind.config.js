@@ -37,10 +37,11 @@ export default {
         },
       },
       screens: {
-        sm: "540px",
+        xs: "375px",
+        sm: "425px",
         md: "768px",
         lg: "1024px",
-        xl: "1280px",
+        xl: "1440px",
       },
       boxShadow: {
         customMd: "0px 4px 20px 0px rgba(9, 43, 94, 0.12)",
