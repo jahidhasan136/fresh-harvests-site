@@ -7,7 +7,7 @@ import LeftHeading from "../../components/subHeading/LeftHeading";
 
 const About = () => {
   return (
-    <div className="container xs:mt-[64px] md:mt-[150px]">
+    <div className="container xs:mt-[64px] lg:mt-[150px]">
       <div className="grid md:grid-cols-2 items-center gap-[65px]">
         {/* left side about image or card */}
         <div className="relative">

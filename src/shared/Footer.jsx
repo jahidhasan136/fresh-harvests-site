@@ -16,8 +16,8 @@ import paypal from "../assets/footer/paypal.svg";
 
 const Footer = () => {
   return (
-    <footer className="mt-[150px] bg-grey20">
-      <div className="md:pt-16 md:pb-6 container">
+    <footer className="xs:mt-[64px] lg:mt-[150px] bg-grey20">
+      <div className="xs:pt-6 md:pt-16 md:pb-6 container">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* Logo and Download Section */}
           <div className="grid place-content-between">

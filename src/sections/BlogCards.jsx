@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const BlogCards = () => {
   return (
-    <div className="mt-10 grid grid-cols-3 gap-6">
+    <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div className="max-w-[384px]">
         <img
           className="w-[384px] h-[260px] object-cover rounded-[20px] mb-6"
