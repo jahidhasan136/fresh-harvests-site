@@ -8,22 +8,25 @@ import RelatedProducts from "../../sections/RelatedProducts";
 const ProductDetails = () => {
   return (
     <div className="container mt-8">
-      <div className="grid grid-cols-2 items-center gap-[46px]">
+      <div className="grid lg:grid-cols-2 items-center gap-[46px]">
+        {/* Left side selecting image */}
         <div>
-          <img src={image} alt="Details Image" />
+          <img className="mx-auto" src={image} alt="Details Image" />
         </div>
 
         {/* Right side content */}
-        <div className="">
+        <div>
           {/* sub heading */}
-          <div className="grid gap-4 mb-[87px]">
-            <LeftHeading value="Fruits" />
-            <h2 className="text-black">Coconut</h2>
-            <h6 className="text-black">
+          <div className="grid xl:gap-4 xs:mb-8 xl:mb-[87px]">
+            <LeftHeading className="xs:mb-1 xl:mb-0" value="Fruits" />
+            <h2 className="text-black xs:text-h4 xl:text-h2 xs:mb-2 xl:mb-0">
+              Coconut
+            </h2>
+            <h6 className="text-black xs:mb-2 xl:mb-0">
               5.0 <span className="text-h7">(1review)</span>
             </h6>
-            <h4 className="text-primary">$6.3/kg</h4>
-            <p className="text-grey100 text-b2">
+            <h4 className="text-primary xs:mb-2 xl:mb-0">$6.3/kg</h4>
+            <p className="text-grey100 xs:text-sm xl:text-b2">
               From our farm directly to your door, our fresh coconuts are
               harvested at the peak of ripeness, offering you a sweet, hydrating
               treat full of flavor. Packed with natural nutrients, coconut is
@@ -34,14 +37,14 @@ const ProductDetails = () => {
 
           {/* quantity */}
           <div className="flex items-center mb-10">
-            <h6 className="text- mr-4">Quantity</h6>
+            <h6 className="mr-4">Quantity</h6>
             <table className="mr-2 border border-grey100">
               <tbody>
                 <tr>
                   <td className="px-4 py-2 border border-grey100 font-bold cursor-pointer">
                     -
                   </td>
-                  <td className="px-4 py-2 border border-grey100">
+                  <td className="xs:text-h5 xl:text-h6 px-4 py-2 border border-grey100">
                     <h5>1</h5>
                   </td>
                   <td className="px-4 py-2 border border-grey100 font-bold cursor-pointer">
@@ -55,7 +58,7 @@ const ProductDetails = () => {
           </div>
 
           {/* favourite or add cart button */}
-          <div className="flex items-center gap-7">
+          <div className="flex xs:flex-col xl:flex-row xl:items-center gap-7">
             <button className="flex items-center gap-[10px] py-4 px-8 bg-grey20 rounded-lg">
               <FaHeart className="text-grey50 text-[32px]" />
               <p className="button1 text-grey100">Save as favorite</p>
