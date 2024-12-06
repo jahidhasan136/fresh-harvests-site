@@ -13,6 +13,12 @@ export default {
         grey20: "#F4F6F6",
       },
       fontSize: {
+        h1: "80px",
+        h2: "48px",
+        h3: "40px",
+        h4: "32px",
+        h5: "24",
+        h6: "18px",
         h7: ["12px", { letterSpacing: "-0.02em" }],
         sh1: ["20px", { letterSpacing: "-0.02em" }],
         sh2: ["14px", { letterSpacing: "-0.02em" }],
