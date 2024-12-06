@@ -4,7 +4,7 @@ const ProductCards = () => {
   return (
     <>
       {/* product category tabs */}
-      <div className="flex items-center justify-center gap-6 xs:mb-6 md:mb-8">
+      <div className="flex items-center justify-center xs:gap-3 sm:gap-6 xs:mb-6 md:mb-8">
         <button className="xs:text-xs md:button2 px-6 py-3 border border-grey50 rounded-lg text-grey80 hover:bg-green hover:border-green hover:text-white transition-all duration-300 ease-in-out">
           All
         </button>

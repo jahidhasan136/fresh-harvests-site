@@ -42,7 +42,7 @@ const Header = () => {
           </div>
 
           {/* mobile version cart or 3bars */}
-          <div className="flex items-center gap-4">
+          <div className="flex md:hidden items-center gap-4">
             <div className="relative">
               <IoMdCart className="text-white text-2xl" />
               <p className="absolute -top-2 -right-1 rounded-full text-white w-4 h-4 bg-[#EE4536] text-xs text-center">
